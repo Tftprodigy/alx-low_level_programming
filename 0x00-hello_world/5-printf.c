@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /**
+ *    main - main block
  *
- *  * main - main block
+ *    Description: main block will
+ *    print string when run.
  *
- *   * Return: 0
+ *    Return: 0
  *
  **/
 
