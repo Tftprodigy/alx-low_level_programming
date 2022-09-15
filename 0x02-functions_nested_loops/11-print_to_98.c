@@ -45,8 +45,7 @@ printf("%c", ',');
 
 printf("%c", ' ');
 
-b  -
-	;;
+b  -;
 
 }
 printf("%c", '\n');
