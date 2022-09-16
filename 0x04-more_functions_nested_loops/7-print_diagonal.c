@@ -1,24 +1,30 @@
+#include <stdio.h>
 #include "main.h"
 
-
-
 /**
- *	print_diagonal - print a straight line using putchar of n size
- *
- *	@n: size of line
+ *	print_diagonal - prints a diagonal
+ *	@n: parameter
+ *	Return: returns nothing
  **/
 
 void print_diagonal(int n)
+{
+int len, space;
 
+if (n > 0)
 {
-int x;
-int y;
-if (n <= 0)
-_putchar('\n');
-for (y = 0; y < n; y++)
+for (len = 0; len < n; len++)
 {
-for (x = y; x > 0; x--)
-_putchar(' ');
-_putchar('\\');
-_putchar('\n');
+for (space = 0; space < len; space++)
+{putchar(' ');
+}
+putchar('\\');
+if (len == (n - 1))
+{
+continue;
+}
+putchar('\n');
+}
+}
+putchar('\n');
 }
