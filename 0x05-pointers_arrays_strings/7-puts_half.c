@@ -23,7 +23,7 @@ half++;
 
 while (half < index)
 {
-_putchar(str[half]);
+	_putchar(str[half]);
 
 half++;
 }
