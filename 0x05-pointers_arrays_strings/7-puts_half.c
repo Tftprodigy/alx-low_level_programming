@@ -10,26 +10,23 @@
 
 void puts_half(char *str)
 {
-char *ptr = str;
-int count = 0;
-int j;
+int index, half;
 
-while (*ptr != '\0')
+index = 0;
+
+while (str[index] != '\0')
+index++;
+
+half = index / 2;
+if (index % 2 == 1)
+half++;
+
+while (half < index)
 {
-count++;
+_putchar(str[half]);
 
-ptr++;
+half++;
 }
 
-for (j = 0; j <= (count - 1); j++)
-{
-if (j >= ((count) / 2) && j <= count && count % 2 == 0)
-{
-_putchar(str[j]);
-}
-else if (count % 2 != 0 && j > ((count - 1) / 2) && j <= count)
-_putchar(str[j]);
-}
 _putchar('\n');
-
 }
